@@ -204,34 +204,53 @@ svn co https://github.com/gadepall/school/trunk/ncert/geometry/figs
 
 \section{Problem}
 Let $V$ be the vector space of $n\times n$ matrices over the field $F$. If $\vec{B}$ is a fixed $n\times n$ matrix, define a function $f_B$ on $V$ by $f_B(\vec{A})= tr(\vec{B}^t \vec{A})$. Show that, $f_B$ is a linear functional on $V$.
-\section{Explanation}
-From the problem statement we get that, 
-\begin{align}
-f_B(\vec{A})= tr(\vec{B}^t \vec{A})
-\end{align}
-Now, to prove if $f_B$ is a linear functional on $V$ or not, we have to check the condition:
-\begin{align}
-f_B(c\vec{A_1} + \vec{A_2})= c f_B(\vec{A_1}) + f_B(\vec{A_2})
-\end{align}
-If this above condition is satisfied then we can say that $f_B$ is a linear functional on $V$.
 \section{Solution}
-Two important properties of trace of matrices are:
-\begin{align}
-tr(\vec{M} + \vec{N}) = tr(\vec{M}) +tr(\vec{N})\\
-tr(c\vec{M}) = c tr(\vec{M})
-\end{align}
-Where $\vec{M}$ and $\vec{N}$ are two square matrices.
-As,
-\begin{align}
-f_B(\vec{A})= trace(\vec{B}^t \vec{A})
-\end{align}
-So, 
-\begin{align}
-f_B(c\vec{A_1} + \vec{A_2})= tr(\vec{B}^t (c\vec{A_1} + \vec{A_2}))\\
-\implies f_B(c\vec{A_1} + \vec{A_2})= tr(c \vec{B}^t \vec{A_1}) + tr(\vec{B}^t \vec{A_2})\\
-\implies f_B(c\vec{A_1} + \vec{A_2})= c (tr(\vec{B}^t \vec{A_1})) + tr(\vec{B}^t \vec{A_2})\\
-\implies f_B(c\vec{A_1} + \vec{A_2})= c f_B(\vec{A_1}) + f_B(\vec{A_2})
-\end{align}
+\begin{table}[h!]
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline
+& \\
+Given & $V$ is a vector space\\
+& of $n\times n$ matrices\\
+& over the field $F$\\
+& $\vec{B}$ is a fixed $n\times n$ matrix\\
+& A function $f_B$ on $V$ is defined \\
+& such that\\
+& $f_B(\vec{A})= tr(\vec{B}^t \vec{A})$\\
+& \\
+\hline
+& \\
+To prove & $f_B$ is a linear functional on $V$\\
+& \\
+\hline
+& \\
+Properties of & \\
+Trace of Matrix  & 1.$tr(\vec{M} + \vec{N})= tr(\vec{M}) +tr(\vec{N})$ \\
+& 2. $tr(c\vec{M}) = c(tr(\vec{M}))$\\
+& Where $\vec{M}$ and $\vec{N}$ are two \\
+& square matrices\\
+& \\
+\hline
+& \\
+Proof & As $f_B(\vec{A})= tr(\vec{B}^t \vec{A})$\\
+& \\
+& $\implies f_B(c\vec{A_1} + \vec{A_2})$\\
+& $= tr(\vec{B}^t (c\vec{A_1} + \vec{A_2}))$\\
+& \\
+& $\implies f_B(c\vec{A_1} + \vec{A_2})= tr(c \vec{B}^t \vec{A_1})$\\
+& $+ tr(\vec{B}^t \vec{A_2})$\\
+& \\
+& $\implies f_B(c\vec{A_1} + \vec{A_2})= c (tr(\vec{B}^t \vec{A_1}))$\\
+& $+ tr(\vec{B}^t \vec{A_2})$\\
+& \\
+& $\implies f_B(c\vec{A_1} + \vec{A_2})$\\
+& $= c f_B(\vec{A_1}) + f_B(\vec{A_2})$\\
+& \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
 Hence, it can be said that $f_B$ is a linear functional on $V$.
 %\renewcommand{\theequation}{\theenumi}
 %\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
