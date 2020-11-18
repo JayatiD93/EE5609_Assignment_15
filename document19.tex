@@ -203,11 +203,11 @@ svn co https://github.com/gadepall/school/trunk/ncert/geometry/figs
 
 
 \section{Problem}
-Let $V$ be the vector space of $n\times n$ matrices over the field $F$. If $\vec{B}$ is a fixed $n\times n$ matrix, define a function $f_B$ on $V$ by $f_B(\vec{A})= trace(\vec{B}^t \vec{A})$. Show that, $f_B$ is a linear functional on $V$.
+Let $V$ be the vector space of $n\times n$ matrices over the field $F$. If $\vec{B}$ is a fixed $n\times n$ matrix, define a function $f_B$ on $V$ by $f_B(\vec{A})= tr(\vec{B}^t \vec{A})$. Show that, $f_B$ is a linear functional on $V$.
 \section{Explanation}
 From the problem statement we get that, 
 \begin{align}
-f_B(\vec{A})= trace(\vec{B}^t \vec{A})
+f_B(\vec{A})= tr(\vec{B}^t \vec{A})
 \end{align}
 Now, to prove if $f_B$ is a linear functional on $V$ or not, we have to check the condition:
 \begin{align}
@@ -227,9 +227,9 @@ f_B(\vec{A})= trace(\vec{B}^t \vec{A})
 \end{align}
 So, 
 \begin{align}
-f_B(c\vec{A_1} + \vec{A_2})= trace(\vec{B}^t (c\vec{A_1} + \vec{A_2}))\\
-\implies f_B(c\vec{A_1} + \vec{A_2})= trace(c \vec{B}^t \vec{A_1}) + trace(\vec{B}^t \vec{A_2})\\
-\implies f_B(c\vec{A_1} + \vec{A_2})= c (trace(\vec{B}^t \vec{A_1})) + trace(\vec{B}^t \vec{A_2})\\
+f_B(c\vec{A_1} + \vec{A_2})= tr(\vec{B}^t (c\vec{A_1} + \vec{A_2}))\\
+\implies f_B(c\vec{A_1} + \vec{A_2})= tr(c \vec{B}^t \vec{A_1}) + tr(\vec{B}^t \vec{A_2})\\
+\implies f_B(c\vec{A_1} + \vec{A_2})= c (tr(\vec{B}^t \vec{A_1})) + tr(\vec{B}^t \vec{A_2})\\
 \implies f_B(c\vec{A_1} + \vec{A_2})= c f_B(\vec{A_1}) + f_B(\vec{A_2})
 \end{align}
 Hence, it can be said that $f_B$ is a linear functional on $V$.
